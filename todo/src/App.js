@@ -14,11 +14,15 @@ function App() {
   const handleSubmit = (e) => {
       e.preventDefault();
 
-      console.log(title);
+      const todo = {
+        id: Math.random(),
+        title,
+        time,
+        done: false,
+      }
 
-      setTitle("");
-
-      console.log("Enviou!");
+      // Envio para Api
+      console.log(todo);
   };
 
   return (
