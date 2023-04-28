@@ -27,4 +27,17 @@
 .form-todo h2,
 .list-todo h2 {
     text-align: center;
+    margin-top: 0;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    font-size: .7em;
+    margin-bottom: .4em;
 }
