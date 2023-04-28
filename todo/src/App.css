@@ -98,4 +98,17 @@ input[type="submit"]:hover {
 .todo p {
     text-align: left;
     font-style: italic;
+    font-size: .7em;
+    margin-bottom: 1.5em;
+}
+
+.todo svg {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 1em;
+    transition: .5;
+}
+
+.todo svg:hover {
+    color: rgb(240, 98, 146);
 }
