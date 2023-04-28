@@ -22,7 +22,11 @@ function App() {
       }
 
       // Envio para Api
+
       console.log(todo);
+
+      setTitle("");
+      setTime("");
   };
 
   return (
