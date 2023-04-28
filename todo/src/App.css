@@ -17,3 +17,14 @@
     margin: 0;
     
 }
+
+.form-todo {
+    padding: 1em;
+    margin: 0 2em;
+    border-bottom: 1px solid #2C3035;
+}
+
+.form-todo h2,
+.list-todo h2 {
+    text-align: center;
+}
