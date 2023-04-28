@@ -41,3 +41,27 @@
     font-size: .7em;
     margin-bottom: .4em;
 }
+
+.form-control input {
+    border: 1px solid #222;
+    border-radius: 2px;
+    background-color: #2C3035;
+    padding: .5em;
+    color: #dfdfdf;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #eee;
+    display: block;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+    transition-duration: 1s;
+}
