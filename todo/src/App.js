@@ -15,10 +15,7 @@ function App() {
     const loadData = async () => {
       setLoading(true);
 
-      const res = await fetch(API + "/todos")
-        .then((res) => res.json())
-        .then((data) => data)
-        .catch((err) => err);
+      const res = await fetch(API + "/todos").then((res) => res.json()).then((data) => data).catch((err) => err);
 
       setLoading(false);
 
@@ -133,3 +130,4 @@ function App() {
 }
 
 export default App;
+
