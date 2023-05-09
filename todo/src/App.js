@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs";
 
+
 const API = "http://localhost:5000";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     const loadData = async () => {
       setLoading(true);
 
-      const res = await fetch(API + "/todos").then((res) => res.json()).then((data) => data).catch((err) => err);
+      const res = await fetch(API + "/todos").then((res) => res.json()).then((data) => data);
 
       setLoading(false);
 
@@ -111,11 +112,12 @@ function App() {
       </div>
       <div className="list-todo">
         <h2>Lista de tarefas:</h2>
+        {console.log(todos)}
         {todos.length === 0 && <p>Não há tarefas!</p>}
         {todos.map((todo) => (
           <div className="todo" key={todo.id}>
             <h3 className={todo.done ? "todo-done" : ""}>{todo.title}</h3>
-            <p>Duração: {todo.time}h</p>
+            <p>Duração: {todo.time}</p>
             <div className="actions">
               <span onClick={() => handleDone(todo)}>
                 {!todo.done ? <BsBookmarkCheck /> : <BsBookmarkCheckFill />}
@@ -130,4 +132,5 @@ function App() {
 }
 
 export default App;
+
 
