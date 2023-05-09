@@ -40,6 +40,7 @@
     font-weight: bold;
     font-size: .7em;
     margin-bottom: .4em;
+    
 }
 
 .form-control input {
@@ -48,6 +49,7 @@
     background-color: #2C3035;
     padding: .5em;
     color: #dfdfdf;
+    text-transform: capitalize;
 }
 
 input[type="submit"] {
